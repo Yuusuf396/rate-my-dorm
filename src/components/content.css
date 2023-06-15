@@ -1,0 +1,17 @@
+.image-container{
+    /* width: 300rem;
+    height: 500rem; */
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0,8,51,.9),rgba(0,8,51,.9)),url(../assets/pexels-scott-webb-305823.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.image-container img{
+    /* width: 60%; */
+   
+}
+.searchbar{
+    align-self: center;
+}
