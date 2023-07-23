@@ -2,23 +2,100 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 10rem;
     background: var(--primary--grey);
+    height: 10vh;
 }
 
 
 .logo a{
     text-decoration: none;
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 2.7rem;
+    font-weight: 800;
     color: var(--green--lime);
 }
 button{
-    padding: .2rem .7rem;
+    padding: .7rem 1rem;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.6rem;
     cursor: pointer;
     background: var(--white);
     border: 0;
     border-radius: .4rem;
 }
+
+/* ************************** */
+ 
+.modal-container{
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+}
+.modal{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    position: fixed;
+    background:white;
+    width: 40%;
+    height: 60%;
+    border-radius: 35px;
+    padding: 2rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+ .modal button {
+    background: var(--primary--grey);
+ }
+ .sign-in-google{
+    padding: 4rem 2rem 3rem 2rem;
+    display: flex;
+    row-gap :1.5rem;
+    flex-direction: column;
+ }
+ .sign-in-google p{
+    font-size: 2rem;
+ }
+ .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .horizontal-line {
+    display: inline-block;
+    border-top: 1px solid var(--primary--grey);
+  }
+  .hr1 {
+    width: 43%;
+    align-self: center;
+  }
+  .or{
+    font-size:25px;
+    font-weight: 300;
+    color: var(--primary--grey);
+    padding: 0 1rem 0 1rem;
+
+  }
+  .line{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem 3rem 2rem;
+
+  }

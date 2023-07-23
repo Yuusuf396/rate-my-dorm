@@ -1,16 +1,26 @@
-// import React from 'react'
-import './navbar.css'
-function Navbar() {
-  return (  
+ 
+import "./navbar.css";
+
+
+function Navbar(props) {
+
+  const onOpen = () => {
+    // eslint-disable-next-line react/prop-types
+    props.onOpen()
+  }
+ 
+  return (
     <nav className="navbar">
-        <div className="logo">
-            <a href="#">RateMyDorm</a>
-           
-        </div>
-         <button className="sign-in">Sign In</button>
-      </nav>
-   
-  )
+      <div className="logo">
+        <a href="#">RateMyDorm</a>
+      </div>
+      <button className="sign-in" onClick={onOpen}>
+        Sign In
+      </button>
+
+     
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
