@@ -1,0 +1,62 @@
+.hostel-details-container{
+
+}
+.img-container{
+    position: relative;
+    height: 35rem;
+    background-image: url(/src/assets/hostel-img-2.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 6rem 0 6rem;
+}
+.img-container img{
+    /* height: 30vh; */
+    height: 30%;
+}
+.img-container h2{
+    /* position: absolute; */
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 25rem 0 0 0 ;
+    font-weight: 600;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+
+}
+.main-container h3{
+    font-size: 2rem;
+    opacity: .6;
+}
+.school-name{
+    color: #0099FF;
+    font-size:4rem;
+    line-height: 4rem;
+}
+.main-container p{
+    font-size: 1.6rem;
+    letter-spacing: 1.4px;
+
+}
+.hostel-search{
+    width: 54rem;
+    height: 3.5rem;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 1.3rem;
+    margin-top: 2rem;
+}
+.hostel-search::placeholder{
+    color: black;
+    opacity: .6;
+    padding: 2rem;
+}

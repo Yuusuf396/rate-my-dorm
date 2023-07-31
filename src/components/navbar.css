@@ -4,7 +4,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
-    background: var(--primary--grey);
+    /* opacity: .6; */
+    /* background: var(--primary--grey); */
+    background:#D3D3D3;
+
     height: 10vh;
 }
 
@@ -12,9 +15,11 @@
 .logo a{
     text-decoration: none;
     font-size: 2.7rem;
-    font-weight: 800;
-    color: var(--green--lime);
-}
+    font-weight: 900;
+    opacity: 1;
+    /* color: var(--green--lime); */
+    color: #0099FF;
+  }
 button{
     padding: .7rem 1rem;
     font-weight: 500;

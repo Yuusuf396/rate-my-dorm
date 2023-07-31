@@ -3,12 +3,14 @@ export const hostels =[{
     name: 'Unilorin',
     reviews: '349',
     location:'Kwara',
+    hostelNumbers:"31"
   }, 
   {
     id: 1,
     name: 'Unilag',
     reviews: '287',
     location:'Lagos',
+    hostelNumbers:"31"
 
   },
    {
@@ -16,12 +18,14 @@ export const hostels =[{
     name: 'LASU',
     reviews: '333',
     location:'Lagos',
+    hostelNumbers:"31"
   },
    {
     id: 3,
     name: 'Uniben',
     reviews: '699', 
     location:'Benin',
+    hostelNumbers:"31"
   },
   {
     id: 4,

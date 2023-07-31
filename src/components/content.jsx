@@ -5,6 +5,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import schoolImg from "../assets/school.avif";
 import "./content.css";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 
 // import school from '../assets/pexels-scott-webb-305823.jpg'
 
@@ -17,9 +18,11 @@ function Content() {
     setSearch(e.target.value);
   };
   const schools = hostels.map((hostel) => (
-    // <p>{hostel} </p>
-    <div key={hostel.id} className="hostel">
-      {/* <div className="hostel"> */}
+    <Link
+      key={hostel.id}
+      className="hostel"
+      to={`/dorm/${hostel.id}`}
+      style={{ opacity: 1 }}>
       <div className="hostel-image">
         <img src={schoolImg} />
       </div>
@@ -30,8 +33,11 @@ function Content() {
         <p>{hostel.reviews} Reviews</p>
         <p>{hostel.location}</p>
       </div>
-      {/* </div> */}
-    </div>
+    </Link>
+
+    //  hostels.forEach(hostel => {
+
+    // }
   ));
   return (
     <>
@@ -51,7 +57,7 @@ function Content() {
         </div>
       </div>
       <div className="hostel-container">{schools}</div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
