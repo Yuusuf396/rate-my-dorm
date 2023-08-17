@@ -60,3 +60,77 @@
     opacity: .6;
     padding: 2rem;
 }
+
+/*  */
+.school-description{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 15rem 4rem 15rem;
+    gap: 3rem;
+}
+
+.hostel-info-list{
+    margin-left: 2rem;
+    list-style-type: none;
+}
+.hostel-info-list li {
+  /* width: 18rem; */
+}
+.hostel-icon{
+    width: 8rem;
+    height: 7.5rem;
+}
+.hostel-info-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    /* height: 3rem; */
+    margin-top: 3rem;
+   cursor: pointer;
+   padding: 1rem;
+   border-radius: 1rem;
+}
+.hostel-info-item:hover{
+    /* opacity: .4; */
+    /* background-color: var(--light--grey); */
+    background-color: #f2f4fa;
+    /* color: #ffffff; */
+    transition: ease-in-out .3s;
+}
+
+
+.hostel-info-item img{
+   border-radius: .2rem; 
+}
+.hostel-info-text{
+    /* width: 4rem; */
+    padding-left: 8rem;
+}
+.hostel-info-text p{
+    font-size: 2.5rem;
+    letter-spacing: 1px; 
+    line-height: 1.2rem;
+    font-weight: 600;
+    width: 45rem;
+}
+.hostel-info-text span{
+    font-size: 2rem;
+    align-items: center;
+    padding-left: 5rem;
+    color:  var(--primary--grey);
+}
+.school-about{
+    width: 43rem;
+    font-size: 2rem;
+    border: 1px solid var(--primary--grey);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    box-shadow: 6px 25px 31px -11px rgba(0,0,0,0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.school-about:hover{
+    box-shadow: none;
+    cursor: pointer;
+}

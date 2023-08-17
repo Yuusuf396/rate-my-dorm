@@ -9,6 +9,7 @@ import {
   // Link,
 } from "react-router-dom";
 import HostelDescription from './pages/[schoolId].jsx';
+import HostelName from '../src/pages/hostels/[hostel.name]';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "dorm/:schoolId",
     element: <HostelDescription/>
+  },
+  {
+    path:"dorm/:schoolId/pyramidhostel",
+    element:<HostelName/>
   }
 ]);
 

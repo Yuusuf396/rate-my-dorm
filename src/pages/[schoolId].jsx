@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 import { hostels } from "../data/hostelData";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
 import Navbar from "../components/navbar";
 import Modal from "../components/modal";
+
+import icon from "../assets/hostel-icon.jpg";
 // import hostelImg from '../assets/hostel-img-2.jpg'
 import "./[schoolId].css";
+import Footer from "../components/footer";
 
 const HostelDescription = () => {
   const [hostel, setHostel] = useState();
@@ -26,7 +31,6 @@ const HostelDescription = () => {
   }
   const searchBar = (e) => {
     console.log(e.target.value);
-
     // console.log(search)
     setSearch(e.target.value);
   };
@@ -59,17 +63,35 @@ const HostelDescription = () => {
 
       <div className="school-description">
         <div className="hostel-info">
-          <ul>
-            <li>                
+          <ul className="hostel-info-list">
+            <li className="hostel-info-item">
+              <div>
+                <img src={icon} alt="" className="hostel-icon" />
+              </div>
+              <Link
+                className="hostel-info-text"
+                to={`/dorm/${schoolId}/pyramidhostel`}>
+                <p>Pyramid Hostel</p>
+                <span>{hostel?.reviews} Reviews</span>
+              </Link>
             </li>
+            <hr />
           </ul>
         </div>
         <div className="school-about">
-
+          <h4 className="school-header"> {hostel?.name}</h4>
+          <p className="school-info">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+            repellat eligendi libero soluta suscipit, laudantium nulla porro
+            consequuntur nemo incidunt fugiat cupiditate tenetur molestias,
+            provident labore blanditiis ex debitis sunt pariatur quo id beatae
+            quisquam. Cumque, at. Adipisci, quis.
+          </p>
         </div>
       </div>
 
       {openModal ? <Modal onClose={() => setOpenModal(false)} /> : null}
+      <Footer />
     </div>
   );
 };

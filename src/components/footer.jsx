@@ -6,7 +6,7 @@ function Footer() {
       <div>
         <p> Rate my Dorm </p>
         <p>
-          Designed by <a href="https://yuusuf.vercel.app/">Yuusuf</a>
+          Designed by <a className="portfolio-link" href="https://yuusuf.vercel.app/">Yuusuf</a>
         </p>
       </div>
       <hr></hr>
