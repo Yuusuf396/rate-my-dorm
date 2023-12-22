@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { hostels } from "../data/hostelData";
+import { hostels } from "../data/hostels";
 import { Link, useParams } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
@@ -7,6 +7,7 @@ import Navbar from "../components/navbar";
 import Modal from "../components/modal";
 
 import icon from "../assets/hostel-icon.jpg";
+// import { hostelReviews } from "../data/hostelDataReviews";
 // import hostelImg from '../assets/hostel-img-2.jpg'
 import "./[schoolId].css";
 import Footer from "../components/footer";
@@ -21,7 +22,7 @@ const HostelDescription = () => {
   const findHostel = () => {
     setHostel(hostels.find((hostel) => hostel.id === Number(schoolId)));
   };
-
+  // let url='/dorm/${schoolId}'
   useEffect(() => {
     findHostel();
   }, []);

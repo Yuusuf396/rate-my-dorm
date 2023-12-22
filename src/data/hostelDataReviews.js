@@ -1,6 +1,6 @@
 export const hostelReviews = [
     {
-      hostels :"Pyramid Hostel Reviews",
+    hostels :"Pyramid Hostel Reviews",
     id: 0,
     school: "Unilorin",
 
@@ -9,6 +9,7 @@ export const hostelReviews = [
   },
   {
     id: 1,
-    hostels:'Health care Hostel'
+    hostels:'Health care Hostel',
+    school:"Futa"
   }
 ];

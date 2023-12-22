@@ -18,7 +18,7 @@
     font-weight: 900;
     opacity: 1;
     /* color: var(--green--lime); */
-    color: #0099FF;
+    color: var(--blue);
   }
 button{
     padding: .7rem 1rem;

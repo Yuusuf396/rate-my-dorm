@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { hostels } from "../data/hostelData";
+import { hostels } from "../data/hostels";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import schoolImg from "../assets/school.avif";
